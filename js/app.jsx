@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     componentWillReceiveProps(props) {
       console.log('componentWillReceiveProps: ', props.title)
-      if (props.title === null) {
+      if (!props.title) {
         return null;
       }
       fetch('http://www.omdbapi.com/?t=' + props.title).then( resp =>{
@@ -51,8 +51,8 @@ document.addEventListener('DOMContentLoaded', function(){
         console.log('JSON: ', info);
         this.setState({loading: false, info: info})
       }).catch( (err) => {
-          this.setState({title: "ERROR!"})
-        });
+        this.setState({title: "ERROR!"})
+      });
     }
 
     render(){
@@ -86,29 +86,41 @@ document.addEventListener('DOMContentLoaded', function(){
     constructor(props){
       super(props);
       this.state = {
-        title: this.props.title
+        isInputEmpty: true
       }
     }
-    handleClick = (e) => {
+
+    handleSubmit = (e) => {
       e.preventDefault();
-      console.log('kliknięty');
-      console.log('Input value: ', this.input.value);
-      this.setState({title: this.input.value});
+      this.setState({title: e.target.search.value});
+    }
+
+    handleInputChange = (e) => {
+      this.setState({ isInputEmpty: !e.target.value})
     }
 
     render(){
-        return <div className="container">
-              <Header/>
-              <form className="search-form">
-                <div className="inputs">
-                  <input type="text" name="search" ref={ (input) => {
-                      return this.input = input;
-                    } } placeholder="Find your favourite movies"></input>
-                  <button onClick={this.handleClick}></button>
-                </div>
-              </form>
-              <MovieInfo title={this.state.title}/>
-            </div>
+      return <div className="container">
+            <Header/>
+            <form
+              className="search-form"
+              onSubmit={this.handleSubmit}
+            >
+              <div className="inputs">
+                <input
+                  type="text"
+                  name="search"
+                  placeholder="Find your favourite movies"
+                  onChange={this.handleInputChange}
+                  />
+                <button
+                  type="submit"
+                  disabled={this.state.isInputEmpty}
+                />
+              </div>
+            </form>
+            <MovieInfo title={this.state.title}/>
+          </div>
         }
   }
 

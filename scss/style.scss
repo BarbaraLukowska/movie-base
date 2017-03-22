@@ -16,7 +16,7 @@ $deeper-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
   box-sizing: border-box;
 }
 body {
-  font-family: 'Catamaran', sans-serif;
+  font-family: 'Catamaran', Arial, sans-serif;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -48,8 +48,10 @@ body {
           padding: 0 10px;
           border-radius: 7px;
           font-size: 1.25em;
+					font-family: 'Catamaran', Arial, sans-serif;
         }
         button {
+					cursor: pointer;
           width: 40px;
           height: 40px;
           border-radius: 7px;
@@ -61,6 +63,11 @@ body {
           background-size: contain;
           border: 4px solid #5EC2CB;
           box-shadow: $shadow;
+					transition: opacity .3s ease-out;
+						&[disabled] {
+							cursor: auto;
+							opacity: .2;
+						}
         }
       }
     }
