@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 189);
+/******/ 	return __webpack_require__(__webpack_require__.s = 190);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10015,7 +10015,7 @@ var Header = function (_React$Component) {
       var _this2 = this;
 
       this.timerId = setTimeout(function () {
-        _this2.setState({ text: "Looking for movie info? Get it from the base!" });
+        _this2.setState({ text: "Feel free to search your favourite movies!" });
       }, 3000);
     }
   }, {
@@ -10303,7 +10303,7 @@ var SearchMovies = function (_React$Component) {
             _react2.default.createElement('input', {
               type: 'text',
               name: 'search',
-              placeholder: 'Find your favourite movies',
+              placeholder: 'Search...',
               onChange: this.handleInputChange
             }),
             _react2.default.createElement('button', {
@@ -10331,7 +10331,7 @@ exports = module.exports = __webpack_require__(87)();
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: 'Catamaran';\n  src: local(\"Catamaran\"), local(\"Catamaran-Regular\"), url(" + __webpack_require__(187) + ") format(\"woff2\"), url(" + __webpack_require__(186) + ") format(\"woff\");\n  font-weight: normal;\n  font-style: normal; }\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\nbody {\n  font-family: 'Catamaran', Arial, sans-serif;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  background-color: #C2383F;\n  color: #FEB7BB;\n  font-size: 18px; }\n  body .container {\n    width: 1300px;\n    justify-content: center; }\n    body .container header {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      height: 100px; }\n      body .container header h1 {\n        font-weight: 500;\n        font-size: 3em; }\n    body .container .search-form .inputs {\n      height: 150px;\n      display: flex;\n      justify-content: center;\n      align-items: center; }\n      body .container .search-form .inputs input {\n        width: 35%;\n        height: 40px;\n        padding: 0 10px;\n        border-radius: 7px;\n        font-size: 1.25em;\n        font-family: 'Catamaran', Arial, sans-serif; }\n      body .container .search-form .inputs button {\n        cursor: pointer;\n        width: 40px;\n        height: 40px;\n        border-radius: 7px;\n        text-transform: uppercase;\n        margin-left: 20px;\n        background-color: #5EC2CB;\n        background-image: url(" + __webpack_require__(188) + ");\n        background-repeat: no-repeat;\n        background-size: contain;\n        border: 4px solid #5EC2CB;\n        box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);\n        transition: opacity .3s ease-out; }\n        body .container .search-form .inputs button[disabled] {\n          cursor: auto;\n          opacity: .2; }\n    body .container .movie-info {\n      display: flex;\n      justify-content: center; }\n      body .container .movie-info .image img {\n        box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19); }\n      body .container .movie-info .details {\n        margin-left: 40px; }\n        body .container .movie-info .details h3 {\n          font-size: 2em;\n          text-align: center;\n          background-color: rgba(161, 28, 35, 0.2);\n          box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);\n          border-radius: 6px;\n          line-height: 1.5em;\n          font-weight: 500; }\n        body .container .movie-info .details span {\n          font-weight: bold;\n          font-size: 1.15em; }\n        body .container .movie-info .details ul {\n          padding: 30px 30px 30px 30px;\n          margin-top: 10px;\n          background-color: rgba(224, 94, 100, 0.4);\n          box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);\n          border-radius: 6px;\n          font-size: 19px; }\n        body .container .movie-info .details ul li {\n          list-style-type: none;\n          line-height: 25px; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: 'Catamaran';\n  src: local(\"Catamaran\"), local(\"Catamaran-Regular\"), url(" + __webpack_require__(187) + ") format(\"woff2\"), url(" + __webpack_require__(186) + ") format(\"woff\");\n  font-weight: normal;\n  font-style: normal; }\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\nbody {\n  font-family: 'Catamaran', Arial, sans-serif;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  background-image: url(" + __webpack_require__(188) + ");\n  background-repeat: no-repeat;\n  background-size: cover;\n  color: #F90018;\n  font-size: 18px; }\n  body .container {\n    width: 1300px;\n    justify-content: center; }\n    body .container header {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      height: 180px; }\n      body .container header h1 {\n        font-weight: 500;\n        font-size: 3em; }\n    body .container .search-form .inputs {\n      height: 150px;\n      display: flex;\n      justify-content: center;\n      align-items: center; }\n      body .container .search-form .inputs input {\n        width: 35%;\n        height: 40px;\n        padding: 0 10px;\n        border-radius: 7px;\n        font-size: 1.25em;\n        font-family: 'Catamaran', Arial, sans-serif; }\n      body .container .search-form .inputs button {\n        cursor: pointer;\n        width: 40px;\n        height: 40px;\n        border: none;\n        margin-left: 20px;\n        background-color: transparent;\n        background-image: url(" + __webpack_require__(189) + ");\n        background-repeat: no-repeat;\n        background-size: contain;\n        transition: opacity .3s ease-out; }\n        body .container .search-form .inputs button[disabled] {\n          cursor: auto;\n          opacity: .2; }\n    body .container .movie-info {\n      display: flex;\n      justify-content: center; }\n      body .container .movie-info .image img {\n        box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19); }\n      body .container .movie-info .details {\n        margin-left: 40px;\n        color: #ebebeb;\n        font-weight: 200; }\n        body .container .movie-info .details h3 {\n          font-size: 2em;\n          text-align: center;\n          background-color: rgba(0, 0, 0, 0.1);\n          box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);\n          border-radius: 6px;\n          line-height: 1.5em;\n          font-weight: 500; }\n        body .container .movie-info .details span {\n          font-weight: bold;\n          font-size: 1.15em; }\n        body .container .movie-info .details ul {\n          padding: 30px 30px 30px 30px;\n          margin-top: 10px;\n          background-color: rgba(255, 255, 255, 0.1);\n          box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);\n          border-radius: 6px;\n          font-size: 19px; }\n        body .container .movie-info .details ul li {\n          list-style-type: none;\n          line-height: 30px; }\n", ""]);
 
 // exports
 
@@ -22914,12 +22914,18 @@ module.exports = "data:application/font-woff2;base64,d09GMgABAAAAAHLQABIAAAABD7w
 
 /***/ }),
 /* 188 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAeFBMVEUAAACuOoutPYuvPI2vPoyvPY2ZM5mvPo2vPY2vOo+vPY2wPI6vPYyvPIyxPo2xO4mvPY2wPI6wPY2zOY65RouvPYyvPY2vPY2wP46vPY2vPY2vPY2vPYywPI6AAICyO46fQICvPY2vPY2wPY2qK4CvPo2vPY0AAABa7aYsAAAAJnRSTlMAFkt/suYFgPow0GrGg04a8GHEGwt2sOU93f3FUIcCKwi4ybcGy5U9pFEAAAABYktHRACIBR1IAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4QMUDzU4CHjligAAAQlJREFUOMutktmagjAMhcNSXKFW3HVGcOS8/yNO2CSp+HHjuSLkz9oQtQrCKDYmjsKAxpTM5ug0j5J3/2IJoeXC96/q8HWaWZul6zrJyotn/8b1ltswoXIknH+b025/ODZ2vuUqso8Zx+d0OnPu9kfOOaLBH3ABR6cLrjfbV+Eiw7Qh90e7M35+hyDuNHwZEZDSHlfhp1TWiIGMDrjJvjMgfhkGsHSElYAFjAY8KaAp4UmVaJr0pJpsxvSkxmwXpaQX1a1ayFt1/1iD33+s8ee+F4IYORhrSkm8nVzxABThHa191F+KUGd/Ny37pwihouyyld8gnlOEowmiogniM9AR7jNAT1dVLvkHatAnzN3N1/AAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMDMtMjBUMTU6NTM6NTYrMDE6MDDhBm7+AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTAzLTIwVDE1OjUzOjU2KzAxOjAwkFvWQgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII="
+module.exports = __webpack_require__.p + "254a01ab4e47d84a82cd03159021670c.jpg";
 
 /***/ }),
 /* 189 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfhAxkQLTKPpqhdAAADVElEQVRo3u1Zz0sbQRh9GxUqkkPxZILWmxdPHqyHUIIVisVSPHuoDZJbb54D/gMePfWYHiu5RCgoxVKQSv8Ae7NCNoeCFYOkLUlfL5vNzLq782N368W5bHZ2vvfefDPzzTcTB8rCcTxFCUUUUEQBgIsWXLTwGUdOV22foHCSFTZ4w6hywwYrnMyGfII1dqhTOqxxIl3yEVbZ1iIflDarHEmLvsBTI/JBOWUhDfpFulb0JOly0ZTPCdBv4C0e3Gr1Ewc4xAVacAEUUMQMVvAcD2+1/IUt55197zdCerXPMkdDW4+yzP0Qiw1753cDUCcsKa1KPAlYdc0HAgALgbHvc1vbdpv9wFwwnY4cCcz8K65K3xe4w4/8xk6E/SqvAivCbFGyGqCfF76t82z4KRJhPiChakI/IYWd/rD3fMRP8gDHoDxjT2jYNoiOrEkc/tizzB/BKR6L80ZqWtOln5Ri/olA/8ev7bHJHb7glALrWEDqaG5TrEi6S77zh70/42PNzixJWK/1jBpi2PFrB2P/l7sc13QmAL4X0Bo6BuPSfl/2atf9ml19cgBgWUC70ZDONcHgchB0/YV3ZtJ7AOAoLwXENVX7HMRge+D0AIALmAMA9PHKNOlyejgQXpWhPIei8HboPV96zw/OFzN6CQWAhB4hQIzaF97ziff8akE/RAEA5Z4ge6AVMLMT0BJ+Kz0AXgtTJu/VDQLTlNI8DDEvIF6rWoemGk7equdWJQdXeEsjqZRRXFXjnOGI6ZSwWaXpgZlUBIgohh5YSUWAiKL0QEQoti+moThiM0ogwHQzitqOrQWYbsdRCYklvVVCEpGSWQmwScmik1JjerukNC4tN6K3T8vjDyaaCEkOJuqjmdI+6dHszg+nQBbHc46xzlkTCSlfUHCP5LmphG4I5CXr3OQy55hnnnNc5ibrUswf9n5Iv+XVGUpI6ZKKS/zt1xtKSOGajkW2pG+GEhJeVHIpQG8uIclVLbcE5yeRYHNZzTHuxUgNkeBoyDC4rmcd8beE31F2zg39YOSzWZ4rBsx8IO4l3EvIUML0XUs4ylSAloTKXUtoZixAKaGduQCFhP8hIFZC9kOgkJD1JFRIyHoZBiRM80imT+WfVkMRFTbZZpvNgfP/AYK0hDrokfYkAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTAzLTI1VDE2OjQ1OjUwKzAxOjAwidVFmwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wMy0yNVQxNjo0NTo1MCswMTowMPiI/ScAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC"
+
+/***/ }),
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(82);

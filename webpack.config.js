@@ -1,4 +1,5 @@
 //Konfiguracja Webpack
+
 module.exports = {
     entry: ['whatwg-fetch', './js/app.jsx'],
     output: {
@@ -18,9 +19,11 @@ module.exports = {
                 loaders: ["style-loader", "css-loader", "sass-loader?sourceMap"]
             },
             {
-                 test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-                 loader: 'url-loader?limit=100000'
+                test: /\.(png|jpg|woff|woff2|eot|ttf|svg)$/,
+                loader: 'url-loader?limit=100000'
             }
+
+
         ]
     }
 }

@@ -11,7 +11,7 @@ import ReactDOM from 'react-dom';
     }
     componentDidMount() {
       this.timerId = setTimeout( () =>{
-        this.setState({text: "Looking for movie info? Get it from the base!"})
+        this.setState({text: "Feel free to search your favourite movies!"})
       }, 3000)
     }
     componentWillUnmount() {

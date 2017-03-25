@@ -31,7 +31,7 @@ import {MovieInfo} from './movieInfo.jsx';
               <input
                 type="text"
                 name="search"
-                placeholder="Find your favourite movies"
+                placeholder="Search..."
                 onChange={this.handleInputChange}
                 />
               <button

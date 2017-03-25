@@ -1,5 +1,8 @@
 $shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 $deeper-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+$main-color: #F90018;
+$h-color: rgba(0, 0, 0 , 0.1);
+$details-color: rgba(255, 255, 255, 0.1);
 
 @font-face {
 	font-family: 'Catamaran';
@@ -20,8 +23,10 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #C2383F;
-  color: #FEB7BB;
+  background-image: url('../img/cinema.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+  color: $main-color;
   font-size: 18px;
   .container {
     width: 1300px;
@@ -30,7 +35,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100px;
+      height: 180px;
       h1 {
         font-weight: 500;
         font-size: 3em;
@@ -54,15 +59,12 @@ body {
 					cursor: pointer;
           width: 40px;
           height: 40px;
-          border-radius: 7px;
-          text-transform: uppercase;
+					border: none;
           margin-left: 20px;
-          background-color: #5EC2CB;
+					background-color: transparent;
           background-image: url('../img/magnifier.png');
           background-repeat: no-repeat;
           background-size: contain;
-          border: 4px solid #5EC2CB;
-          box-shadow: $shadow;
 					transition: opacity .3s ease-out;
 						&[disabled] {
 							cursor: auto;
@@ -81,10 +83,12 @@ body {
       }
       .details{
         margin-left: 40px;
+				color: rgb(235, 235, 235);
+				font-weight: 200;
         h3 {
           font-size: 2em;
           text-align: center;
-          background-color: rgba(161, 28, 35, 0.2);
+          background-color: $h-color;
           box-shadow: $shadow;
           border-radius: 6px;
           line-height: 1.5em;
@@ -94,18 +98,17 @@ body {
           font-weight: bold;
           font-size: 1.15em;
         }
-
-        ul{
+        ul {
           padding: 30px 30px 30px 30px;
           margin-top: 10px;
-          background-color: rgba(224, 94, 100, 0.4);
+          background-color: $details-color;
           box-shadow: $shadow;
           border-radius: 6px;
           font-size: 19px;
         }
         ul li {
           list-style-type: none;
-          line-height: 25px;
+          line-height: 30px;
         }
       }
     }
