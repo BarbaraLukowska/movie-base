@@ -40,14 +40,14 @@ body {
       h1 {
         font-size: 1.5em;
 				font-weight: 500;
-				@media all and (min-width: 600px) {
-					font-size: 2em;
-					font-weight: 500;
-				}
-				@media all and (min-width: 768px) {
-					font-size: 3em;
-					font-weight: 500;
-				}
+					@media all and (min-width: 600px) {
+						font-size: 2em;
+						font-weight: 500;
+					}
+					@media all and (min-width: 768px) {
+						font-size: 3em;
+						font-weight: 500;
+					}
       }
     }
     .search-form {
@@ -63,12 +63,12 @@ body {
           border-radius: 7px;
           font-size: 1.25em;
 					font-family: 'Abel', Arial, sans-serif;
-					@media all and (max-width: 600px){
-						width: 10em;
-					}
-					@media all and (max-width: 768px){
-						width: 15em;
-					}
+						@media all and (max-width: 600px){
+							width: 10em;
+						}
+						@media all and (max-width: 768px){
+							width: 15em;
+						}
         }
         button {
 					cursor: pointer;
