@@ -10096,7 +10096,7 @@ var MovieInfo = function (_React$Component) {
       if (!props.title) {
         return null;
       }
-      fetch('http://www.omdbapi.com/?t=' + props.title).then(function (resp) {
+      fetch('//www.omdbapi.com/?t=' + props.title).then(function (resp) {
         if (resp.ok) {
           return resp.json();
         } else {
