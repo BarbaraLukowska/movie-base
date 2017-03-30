@@ -16,7 +16,7 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                loaders: ["style-loader", "css-loader", 'resolve-url-loader', "sass-loader?sourceMap"]
+                loaders: ["style-loader", "css-loader", "sass-loader?sourceMap"]
             },
             {
                 test: /\.(png|jpg|woff|woff2|eot|ttf|svg)$/,

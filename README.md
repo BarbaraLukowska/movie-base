@@ -1,2 +1,2 @@
 My first React.js project - The movie base app.
-I've used The Open Movie Database: http://www.omdbapi.com/?
+I've used The Open Movie Database: http://www.omdbapi.com/
