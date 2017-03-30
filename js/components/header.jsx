@@ -5,12 +5,12 @@ import ReactDOM from 'react-dom';
     constructor(props){
       super(props);
       this.state = {
-        text: "Welcome to movies base!"
+        text: "Welcome to movies database!"
       }
     }
     componentDidMount() {
       this.timerId = setTimeout( () =>{
-        this.setState({text: "Feel free to search your favourite movies!"})
+        this.setState({text: "Feel free to search for your favourite movies!"})
       }, 3000)
     }
     componentWillUnmount() {

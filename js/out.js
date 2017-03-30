@@ -10004,7 +10004,7 @@ var Header = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
 
     _this.state = {
-      text: "Welcome to movies base!"
+      text: "Welcome to movies database!"
     };
     return _this;
   }
@@ -10015,7 +10015,7 @@ var Header = function (_React$Component) {
       var _this2 = this;
 
       this.timerId = setTimeout(function () {
-        _this2.setState({ text: "Feel free to search your favourite movies!" });
+        _this2.setState({ text: "Feel free to search for your favourite movies!" });
       }, 3000);
     }
   }, {
