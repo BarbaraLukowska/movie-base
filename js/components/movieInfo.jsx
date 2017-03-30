@@ -14,7 +14,7 @@ import ReactDOM from 'react-dom';
       if (!props.title) {
         return null;
       }
-      fetch('http://www.omdbapi.com/?t=' + props.title).then( resp =>{
+      fetch('https://www.omdbapi.com/?t=' + props.title).then( resp =>{
         if (resp.ok) {
           return resp.json();
         } else {
