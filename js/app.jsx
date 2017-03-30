@@ -5,7 +5,6 @@ import "../scss/style.scss";
 
 document.addEventListener('DOMContentLoaded', function(){
 
-
   class App extends React.Component {
     render(){
       return <SearchMovies/>
